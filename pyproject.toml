@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["src/fraud"]
+omit = ["src/fraud/producer.py", "src/fraud/consumer.py"]
